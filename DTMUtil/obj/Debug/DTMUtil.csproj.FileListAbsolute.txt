@@ -1,0 +1,6 @@
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\bin\Debug\DTMUtil.dll
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\bin\Debug\DTMUtil.pdb
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.CoreCompileInputs.cache
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.dll
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.pdb
+C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csprojAssemblyReference.cache
