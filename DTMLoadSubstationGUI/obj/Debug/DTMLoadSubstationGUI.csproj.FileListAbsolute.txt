@@ -2,7 +2,7 @@ C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\bin\Debug\DTMLoadSubstationGUI.ex
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\bin\Debug\DTMLoadSubstationGUI.exe
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\bin\Debug\DTMLoadSubstationGUI.pdb
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMLoadSubstationGUI.csprojAssemblyReference.cache
-C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMLoadSubstationGUI.LoadSubstationGUI.resources
+C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMUtil.LoadSubstationGUI.resources
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMLoadSubstationGUI.Properties.Resources.resources
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMLoadSubstationGUI.csproj.GenerateResource.cache
 C:\Users\bartonrd\DTMUtil\DTMLoadSubstationGUI\obj\Debug\DTMLoadSubstationGUI.csproj.CoreCompileInputs.cache
