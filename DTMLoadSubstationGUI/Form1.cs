@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DTMLoadSubstationGUI
+namespace DTMUtil
 {
     public partial class LoadSubstationGUI : Form
     {
@@ -53,5 +53,10 @@ namespace DTMLoadSubstationGUI
             this.Close();
         }
         private LoadSubstationData data;
+
+        private void LoadSubstationGUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

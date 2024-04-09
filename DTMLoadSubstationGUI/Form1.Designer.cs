@@ -1,4 +1,4 @@
-﻿namespace DTMLoadSubstationGUI
+﻿namespace DTMUtil
 {
     partial class LoadSubstationGUI
     {
@@ -124,6 +124,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "LoadSubstationGUI";
             this.Text = "Load Substation";
+            this.Load += new System.EventHandler(this.LoadSubstationGUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
