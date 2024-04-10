@@ -4,3 +4,10 @@ C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.CoreComp
 C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.dll
 C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.pdb
 C:\Users\bartonrd\source\repos\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csprojAssemblyReference.cache
+C:\Users\bartonrd\DTMUtil\DTMUtil\bin\Debug\DTMUtil.dll
+C:\Users\bartonrd\DTMUtil\DTMUtil\bin\Debug\DTMUtil.pdb
+C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.LoadSubstationGUI.resources
+C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.GenerateResource.cache
+C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.CoreCompileInputs.cache
+C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.dll
+C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.pdb
