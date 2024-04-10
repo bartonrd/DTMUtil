@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Management;
-namespace DTMLoadSubstationGUI
+namespace DTMUtil
 {
 
     public class Networking
