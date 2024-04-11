@@ -10,6 +10,8 @@ namespace DTMUtil
     public class SCDReader
     {
         public SCDReader() { }
+        XmlDocument xmlDoc = null;
+        private XmlNamespaceManager nsMgr = null;
         public SCDReader(string filePath)
         {
             LoadFile(filePath);
@@ -22,6 +24,7 @@ namespace DTMUtil
             nsMgr = new XmlNamespaceManager(xmlDoc.NameTable);
             nsMgr.AddNamespace("ns", @"http://www.iec.ch/61850/2003/SCL");
             nsMgr.AddNamespace("gse", @"http://www.selinc.com/2006/61850");
+            nsMgr.AddNamespace("header", @"http://www.sce.com/SEMT/61850/SEMT_Header");
         }
 
         public IEDDeviceInfo[] GetIEDDeviceInfos()
@@ -57,7 +60,38 @@ namespace DTMUtil
             }
             return list.ToArray();
         }
-        XmlDocument xmlDoc = null;
-        private XmlNamespaceManager nsMgr = null;
+
+        public SourceInfo[] GetSourceInfo()
+        {
+            List<SourceInfo> list = new List<SourceInfo>();
+            if (xmlDoc == null)
+                throw new XMLReaderException("Xml Document is null");
+
+            var privateNodeList = xmlDoc.SelectNodes("//ns:SCL/ns:Private", nsMgr);
+
+            foreach (XmlNode privateNode in privateNodeList)
+            {
+                var sourcesParentNode = privateNode.SelectNodes("header:Sources", nsMgr);
+                foreach (XmlNode sources in sourcesParentNode)
+                {
+                    var sourcesList = sources.SelectNodes("Source", nsMgr);
+                    foreach(XmlNode sourceNode in sourcesList)
+                    {
+                        SourceInfo source = new SourceInfo();
+                        source.model = sourceNode.Attributes["model"].Value;
+                        source.network = sourceNode.Attributes["network"].Value;
+                        source.source = sourceNode.Attributes["source"].Value;
+                        source.nodeName = sourceNode.Attributes["nodeName"].Value;
+                        source.routingAdd = sourceNode.Attributes["routingAdd"].Value;
+                        source.xmlns = sourceNode.Attributes["xmlns"].Value;
+
+                        list.Add(source);
+                    }
+                }
+                
+            }
+            return list.ToArray();
+        }
+
     }
 }

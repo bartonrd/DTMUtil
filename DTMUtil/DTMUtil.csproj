@@ -67,6 +67,7 @@
     <Compile Include="RelayControlInfo.cs" />
     <Compile Include="RelayControlInfoInterChange.cs" />
     <Compile Include="SCDReader.cs" />
+    <Compile Include="SourceInfo.cs" />
     <Compile Include="StatusTestInfo.cs" />
     <Compile Include="StatusTestInfoInterchange.cs" />
     <Compile Include="XMLReaderException.cs" />

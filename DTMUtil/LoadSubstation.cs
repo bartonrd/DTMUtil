@@ -9,6 +9,8 @@ namespace DTMUtil
 {
     public class LoadSubstation
     {
+        public event Action<object, FormClosingEventArgs> OnFormClosed;
+
         public LoadSubstation()
         {
             net = new Networking();
@@ -16,13 +18,21 @@ namespace DTMUtil
             data.networkAdapters = net.GetNetworks();
             LoadLastSelection(ref data);
             form = new LoadSubstationGUI(data);
+            form.FormClosing += OnFormClosing;
         }
+
+        private void OnFormClosing(object sender, FormClosingEventArgs e)
+        {
+            OnFormClosed?.Invoke(sender, e);
+        }
+
         public void StartGUI()
         {
             thread = new System.Threading.Thread(Run);
             thread.SetApartmentState(System.Threading.ApartmentState.STA);
             thread.Start();
             thread.Join();
+          
             WriteLastSelection();
         }
         public void SetIP(string[] ipAddresses, string[] subnetMasks, string gatewayIP)

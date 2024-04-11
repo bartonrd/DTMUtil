@@ -52,7 +52,7 @@ namespace DTMUtil
         {
             this.Close();
         }
-        private LoadSubstationData data;
+        public LoadSubstationData data;
 
         private void LoadSubstationGUI_Load(object sender, EventArgs e)
         {

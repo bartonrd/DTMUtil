@@ -11,3 +11,11 @@ C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.GenerateResource.cach
 C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.CoreCompileInputs.cache
 C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.dll
 C:\Users\bartonrd\DTMUtil\DTMUtil\obj\Debug\DTMUtil.pdb
+C:\Development\DTMUtil\DTMUtil\bin\Debug\DTMUtil.dll
+C:\Development\DTMUtil\DTMUtil\bin\Debug\DTMUtil.pdb
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.AssemblyReference.cache
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.LoadSubstationGUI.resources
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.GenerateResource.cache
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.csproj.CoreCompileInputs.cache
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.dll
+C:\Development\DTMUtil\DTMUtil\obj\Debug\DTMUtil.pdb
