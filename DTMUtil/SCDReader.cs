@@ -78,12 +78,21 @@ namespace DTMUtil
                     foreach(XmlNode sourceNode in sourcesList)
                     {
                         SourceInfo source = new SourceInfo();
-                        source.model = sourceNode.Attributes["model"].Value;
-                        source.network = sourceNode.Attributes["network"].Value;
-                        source.source = sourceNode.Attributes["source"].Value;
-                        source.nodeName = sourceNode.Attributes["nodeName"].Value;
-                        source.routingAdd = sourceNode.Attributes["routingAdd"].Value;
-                        source.xmlns = sourceNode.Attributes["xmlns"].Value;
+                        source.model = GetAttributeValue(sourceNode,"model");
+                        source.network = GetAttributeValue(sourceNode, "network");  
+                        source.source = GetAttributeValue(sourceNode, "source");  
+                        source.nodeName = GetAttributeValue(sourceNode, "nodeName"); 
+                        source.routingAdd = GetAttributeValue(sourceNode, "routingAdd");  
+                        source.xmlns = GetAttributeValue(sourceNode, "xmlns");  
+
+
+                        source.ansiDevs = GetAttributeValue(sourceNode, "ansiDevs"); 
+                        source.rackPosNo = GetAttributeValue(sourceNode, "rackPosNo");  
+                        source.pod = GetAttributeValue(sourceNode, "pod");  
+                        source.ncs = GetAttributeValue(sourceNode, "ncs"); 
+                        source.logic = GetAttributeValue(sourceNode, "logic"); 
+                        source.flow = GetAttributeValue(sourceNode, "flow");  
+                        source.operatorTag = GetAttributeValue(sourceNode, "operatorTag");  
 
                         list.Add(source);
                     }
@@ -91,6 +100,18 @@ namespace DTMUtil
                 
             }
             return list.ToArray();
+        }
+
+        private string GetAttributeValue(XmlNode node, string prop)
+        {
+            // sourceNode.Attributes["operatorTag"].Value;
+            var attr = node.Attributes[prop];
+            if(attr != null)
+            {
+                return attr.Value;
+            }
+
+            return "";
         }
 
     }

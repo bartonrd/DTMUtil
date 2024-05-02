@@ -8,3 +8,13 @@ C:\Development\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.csproj.CoreCompil
 C:\Development\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilC.01F8BD8A.Up2Date
 C:\Development\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.exe
 C:\Development\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.pdb
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\bin\Debug\DTMUtilConsole.exe.config
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\bin\Debug\DTMUtilConsole.exe
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\bin\Debug\DTMUtilConsole.pdb
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\bin\Debug\DTMUtil.dll
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\bin\Debug\DTMUtil.pdb
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.csprojAssemblyReference.cache
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.csproj.CoreCompileInputs.cache
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.csproj.CopyComplete
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.exe
+C:\Users\bartonrd\DTMUtil\DTMUtilConsole\obj\Debug\DTMUtilConsole.pdb
