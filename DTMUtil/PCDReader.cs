@@ -50,12 +50,29 @@ namespace DTMUtil
                 if (skipTheseDevices != null && skipTheseDevices.Contains(device))
                     continue;
                 // Get the point type, for this method we only want status and control points
+                if (point.Attributes["name"].Value.Contains("SETTINGS"))
+                {
+                    //Console.WriteLine(point.Attributes["name"].Value);
+                }
                 var i = Point.PointType(point);
+
                 if (i == "StatusControl")
                 {
                     try
                     {
                         points.Add(new StatusControlPoint(point));
+                    }
+                    catch
+                    {
+                        // We've encountered an improper point
+                        continue;
+                    }
+                }
+                else if(i == "Control")
+                {
+                    try
+                    {
+                        points.Add(new ControlPoint(point));
                     }
                     catch
                     {

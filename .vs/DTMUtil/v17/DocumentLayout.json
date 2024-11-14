@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Development\\DTMUtil\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\pcdreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\pcdreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\controltestinfointerchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\controltestinfointerchange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\controltestinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\controltestinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\dtmpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\dtmpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|c:\\development\\dtmutil\\dtmutil\\relaycontrolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5AB47623-0BE5-46B3-B17B-E7BB99346E35}|DTMUtil\\DTMUtil.csproj|solutionrelative:dtmutil\\relaycontrolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{113F8FBF-97CA-4766-A222-A1C144AD9177}|DTMUtilConsole\\DTMUtilConsole.csproj|c:\\development\\dtmutil\\dtmutilconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{113F8FBF-97CA-4766-A222-A1C144AD9177}|DTMUtilConsole\\DTMUtilConsole.csproj|solutionrelative:dtmutilconsole\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControlTestInfo.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\ControlTestInfo.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\ControlTestInfo.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\ControlTestInfo.cs",
+              "RelativeToolTip": "DTMUtil\\ControlTestInfo.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAQwE0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T18:41:46.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControlTestInfoInterChange.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\ControlTestInfoInterChange.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\ControlTestInfoInterChange.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\ControlTestInfoInterChange.cs",
+              "RelativeToolTip": "DTMUtil\\ControlTestInfoInterChange.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:58:14.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RelayControlInfo.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\RelayControlInfo.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\RelayControlInfo.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\RelayControlInfo.cs",
+              "RelativeToolTip": "DTMUtil\\RelayControlInfo.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAgwA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:56:44.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DTMPath.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\DTMPath.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\DTMPath.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\DTMPath.cs",
+              "RelativeToolTip": "DTMUtil\\DTMPath.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:55:49.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PCDReader.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\PCDReader.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\PCDReader.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\PCDReader.cs",
+              "RelativeToolTip": "DTMUtil\\PCDReader.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAASwDkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:52:13.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Point.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtil\\Point.cs",
+              "RelativeDocumentMoniker": "DTMUtil\\Point.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtil\\Point.cs",
+              "RelativeToolTip": "DTMUtil\\Point.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAIAywDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:39:44.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Development\\DTMUtil\\DTMUtilConsole\\Program.cs",
+              "RelativeDocumentMoniker": "DTMUtilConsole\\Program.cs",
+              "ToolTip": "C:\\Development\\DTMUtil\\DTMUtilConsole\\Program.cs",
+              "RelativeToolTip": "DTMUtilConsole\\Program.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwDMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:31:01.288Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

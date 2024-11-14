@@ -46,6 +46,30 @@ namespace DTMUtilConsole
                 SCDReader reader = new SCDReader(GetFileByExtention(loadSubstation.data.lastFolderSelected, ".scd"));
 
                 Console.WriteLine($"NODE NAME: {reader.GetSourceInfo()[0].nodeName}");
+
+                // GetFileByExtention(loadSubstation.data.lastFolderSelected, ".scd")
+                object[] objs = new
+                    object[5];
+                objs[0] = GetFileByExtention(loadSubstation.data.lastFolderSelected, ".pcd");
+                objs[1] = "HMI";
+                objs[2] = "EPAC";
+                objs[3] = "CHGR";
+                objs[4] = "ETM";
+
+                ControlTestInfoInterChange controlTestInfo = new ControlTestInfoInterChange(objs);
+
+                for (int i = 0; i < controlTestInfo.Count(); ++i)
+                {
+                    var test = controlTestInfo.Current();
+                    Console.WriteLine($"Control Test: {test.control_name}");
+                    controlTestInfo.MoveNext();
+
+                    if (test.control_name.Contains("SETTINGS"))
+                    {
+                        Console.WriteLine($"Control Test: {test.control_name}");
+                    }
+                }
+
             }
             else
             {

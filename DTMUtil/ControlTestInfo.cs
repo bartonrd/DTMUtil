@@ -6,9 +6,16 @@ namespace DTMUtil
 {
     public struct ControlTestInfo
     {
+        public string control_source, control_name, control_ctlPath, control_desc_0, control_desc_1, control_type;
+        public int control_item, control_emsID, length, statlength, control_norm;
+        public int status_emsID;
+        public int[] statNorms;
+        public string[] target_source, target_name, target_ctlPath, target_desc_0, target_desc_1, target_statPaths;
+        public int[] target_item;
         public ControlTestInfo(Point point)
         {
             control_norm = point.Norm;
+            status_emsID = -1;
             switch (point.GetPointType())
             {
                 case "Control":
@@ -20,6 +27,9 @@ namespace DTMUtil
                     control_item = ((ControlPoint)point).Item;
                     control_name = ((ControlPoint)point).Name;
                     control_type = point.Ctl.CtlVal;
+
+                    if(point.Stat != null)
+                        status_emsID = point.Stat.EmsID;
 
                     length = 1;
 
@@ -52,6 +62,9 @@ namespace DTMUtil
                     control_name = ((StatusControlPoint)point).Name;
                     control_type = point.Ctl.CtlVal;
 
+                    if (point.Stat != null)
+                        status_emsID = point.Stat.EmsID;
+
                     length = 1;
 
                     target_source = new string[1] { control_source };
@@ -72,6 +85,9 @@ namespace DTMUtil
                     control_emsID = ((MasterPoint)point).Ctl.EmsID;
                     control_item = ((MasterPoint)point).Item;
                     control_name = ((MasterPoint)point).Name;
+
+                    if (point.Stat != null)
+                        status_emsID = point.Stat.EmsID;
 
                     List<string> temp_target_ctlPath = new List<string>();
                     List<string> temp_target_desc_0 = new List<string>();
@@ -126,10 +142,6 @@ namespace DTMUtil
 
             return str;
         }
-        public string control_source, control_name, control_ctlPath, control_desc_0, control_desc_1, control_type;
-        public int control_item, control_emsID, length, statlength, control_norm;
-        public int[] statNorms;
-        public string[] target_source, target_name, target_ctlPath, target_desc_0, target_desc_1, target_statPaths;
-        public int[] target_item;
+
     }
 }

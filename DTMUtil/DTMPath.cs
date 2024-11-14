@@ -10,6 +10,9 @@ namespace DTMUtil
     {
         public static string GetDTMPath(string source, string path)
         {
+            if (path == null)
+                return "dtmutil-undefined";
+
             var tokens = path.Split('/');
             var lastpart = tokens[3].Split(':');
             return "/IEDs/" + source + "/" + source + "&&&" + source + tokens[0] + "/" + tokens[1] + tokens[2] + lastpart[0] + "." + lastpart[1];

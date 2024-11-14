@@ -44,7 +44,7 @@ namespace DTMUtil
     {
         public Status()
         {
-            StatPath = "";
+            StatPath = "n/a";
             EmsID = -1;
         }
         public Status(XmlNode ODA)
@@ -53,6 +53,13 @@ namespace DTMUtil
         }
         public void Initialize(XmlNode ODA)
         {
+            if(ODA == null)
+            {
+                StatPath = "n/a";
+                EmsID = -1;
+                return;
+            }
+
             // A status must have a 61850 path
             string ldInst, prefix, lnClass, lnInst, ending;
             ldInst = ODA.Attributes["ldInst"].Value;
@@ -136,7 +143,7 @@ namespace DTMUtil
             }
             catch
             {
-                Stat = null;
+                Stat = new Status();
             }
         }
         public abstract string GetPointType();
