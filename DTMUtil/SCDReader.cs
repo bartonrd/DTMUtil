@@ -38,10 +38,10 @@ namespace DTMUtil
             foreach (XmlNode node in iedList)
             {
                 IEDDeviceInfo ied = new IEDDeviceInfo();
-                ied.name = node.Attributes["name"].Value;
-                ied.type = node.Attributes["type"].Value;
-                ied.manufacturer = node.Attributes["manufacturer"].Value;
-                ied.configVersion = node.Attributes["configVersion"].Value;
+                ied.name = GetAttributeValue(node, "name"); // node.Attributes["name"].Value;
+                ied.type = GetAttributeValue(node, "type"); // node.Attributes["type"].Value;
+                ied.manufacturer = GetAttributeValue(node, "manufacturer"); // node.Attributes["manufacturer"].Value;
+                ied.configVersion = GetAttributeValue(node, "configVersion");
                 ied.ipAddress = "";
                 ied.ipMask = "";
                 foreach (XmlNode networkDevice in networkList)
@@ -59,6 +59,18 @@ namespace DTMUtil
                 list.Add(ied);
             }
             return list.ToArray();
+        }
+
+        private string GetXMLAttributeValue(XmlNode node, string attributeName)
+        {
+            if (node == null)
+                return string.Empty;
+
+            var attribute = node.Attributes[attributeName];
+            if (attribute == null)
+                return string.Empty;
+            
+            return attribute.Value;
         }
 
         public SourceInfo[] GetSourceInfo()

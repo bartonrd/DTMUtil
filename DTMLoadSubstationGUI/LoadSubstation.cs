@@ -16,6 +16,7 @@ namespace DTMUtil
             data.networkAdapters = net.GetNetworks();
             LoadLastSelection(ref data);
             form = new LoadSubstationGUI(data);
+            form.ParentClass = this;
         }
         public void StartGUI()
         {

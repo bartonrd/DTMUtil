@@ -13,6 +13,7 @@ namespace DTMUtil
 {
     public partial class LoadSubstationGUI : Form
     {
+        public LoadSubstation ParentClass { get; internal set; }
         public LoadSubstationGUI(LoadSubstationData data)
         {
             InitializeComponent();
@@ -53,6 +54,8 @@ namespace DTMUtil
             this.Close();
         }
         private LoadSubstationData data;
+
+        
 
         private void LoadSubstationGUI_Load(object sender, EventArgs e)
         {

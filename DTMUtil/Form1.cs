@@ -54,6 +54,8 @@ namespace DTMUtil
         }
         public LoadSubstationData data;
 
+        public LoadSubstation ParentClass { get; internal set; }
+
         private void LoadSubstationGUI_Load(object sender, EventArgs e)
         {
 

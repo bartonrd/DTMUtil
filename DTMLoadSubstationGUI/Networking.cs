@@ -1,59 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Management;
+
 namespace DTMUtil
 {
-
     public class Networking
     {
+        private ManagementClass mc;
+        private ManagementObjectCollection moc;
+
         public Networking()
         {
-            mc = new ManagementClass("Win32_NetworkAdapterConfiguration");
+            mc = new ManagementClass("Win32_NetworkAdapter");
             moc = mc.GetInstances();
         }
+
+        // Get all enabled network adapters
         public string[] GetNetworks()
         {
             List<string> list = new List<string>();
-            foreach (ManagementObject mo in moc)
+
+            try
             {
-                if ((bool)mo["IPEnabled"])
+                foreach (ManagementObject mo in moc)
                 {
-                    list.Add(mo["Description"].ToString());
+                    // Ensure we're only working with network adapters that are enabled
+                    if ((bool)mo["NetEnabled"])
+                    {
+                        string description = mo["Description"].ToString();
+                        Console.WriteLine($"Network Adapter: {description}"); // Debugging line
+                        list.Add(description);
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error while retrieving network adapters: {ex.Message}");
+            }
+
             return list.ToArray();
         }
 
-        public void SetIP(string nicName, string[] IpAddresses,
-            string[] SubnetMasks, string Gateway)
+        // Set the static IP, Subnet, and Gateway for a given adapter
+        public void SetIP(string nicName, string[] IpAddresses, string[] SubnetMasks, string Gateway)
         {
-            foreach (ManagementObject mo in moc)
+            try
             {
-                if (mo["Description"].Equals(nicName))
+                foreach (ManagementObject mo in moc)
                 {
-                    Console.WriteLine("Inside NicName block");
-                    ManagementBaseObject newIP =
-                        mo.GetMethodParameters("EnableStatic");
-                    ManagementBaseObject newGate =
-                        mo.GetMethodParameters("SetGateways");
+                    // Find the matching network adapter based on description
+                    if (mo["Description"].Equals(nicName))
+                    {
+                        Console.WriteLine("Found matching NIC: " + nicName); // Debugging line
 
-                    newGate["DefaultIPGateway"] = new string[] { Gateway };
-                    newGate["GatewayCostMetric"] = new int[] { 1 };
+                        // Parameters for setting static IP
+                        ManagementBaseObject newIP = mo.GetMethodParameters("EnableStatic");
+                        ManagementBaseObject newGate = mo.GetMethodParameters("SetGateways");
 
-                    newIP["IPAddress"] = IpAddresses;
-                    newIP["SubnetMask"] = SubnetMasks;
+                        // Set Gateway
+                        newGate["DefaultIPGateway"] = new string[] { Gateway };
+                        newGate["GatewayCostMetric"] = new int[] { 1 };
 
-                    ManagementBaseObject setIP = mo.InvokeMethod(
-                        "EnableStatic", newIP, null);
-                    ManagementBaseObject setGateways = mo.InvokeMethod(
-                        "SetGateways", newGate, null);
-                    break;
+                        // Set IP Address and Subnet Mask
+                        newIP["IPAddress"] = IpAddresses;
+                        newIP["SubnetMask"] = SubnetMasks;
+
+                        // Apply settings
+                        mo.InvokeMethod("EnableStatic", newIP, null);
+                        mo.InvokeMethod("SetGateways", newGate, null);
+
+                        Console.WriteLine("IP, Subnet, and Gateway set successfully.");
+                        break; // Exit after setting the first matching adapter
+                    }
                 }
-
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error while setting IP settings: {ex.Message}");
             }
         }
-
-        ManagementClass mc;
-        ManagementObjectCollection moc;
     }
 }

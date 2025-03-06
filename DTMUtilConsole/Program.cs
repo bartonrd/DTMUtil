@@ -70,12 +70,38 @@ namespace DTMUtilConsole
                     }
                 }
 
+                string[] ipAddresses = new string[1];
+                ipAddresses[0] = "10.81.20.128";
+
+                string[] subnets = new string[1];
+                subnets[0] = "255.255.254.0";
+
+                loadSubstation.ParentClass.SetIP(ipAddresses, subnets, "10.81.20.9");
+
+                string scdPath = GetFileByExtention(loadSubstation.data.lastFolderSelected, ".scd");
+                SCDReader scdReader = new SCDReader(scdPath);
+                var iedInfos = scdReader.GetIEDDeviceInfos();
+                for (int i = 0; i < iedInfos.Length; i++)
+                {
+                    string name = iedInfos[i].name;
+                    Console.WriteLine(name);
+                }
+
+                Console.WriteLine("Source Info------------------------------------------------");
+                var sourceInfo = reader.GetSourceInfo();
+                for (int i = 0; i < sourceInfo.Length; ++i)
+                {
+                    Console.WriteLine($"{sourceInfo[i].source}: {sourceInfo[i].flow}");
+                }
+                Console.WriteLine("-----------------------------------------------------------");
             }
             else
             {
                 Console.WriteLine("form not of correct type");
             }
-            System.Threading.Thread.Sleep(5000);    
+
+            //System.Threading.Thread.Sleep(10000);    
+            Console.ReadLine();
         }
     }
 }
